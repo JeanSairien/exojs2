@@ -27,11 +27,14 @@ describe('Les chaines de caractères : ', function () {
         expect(result).toEqual('Je dirait');
     });
 
-    it('Mettre en majuscule la chaine', function () {
+    /*it('Mettre en majuscule la chaine', function () {
         var result = majusculeString('Un autre excellent exercice');
         expect(result).toEqual('UN AUTRE EXCELLENT EXERCICE');
+    });*/
+    it('Mettre en majuscule la chaine', function () {
+        var result = majusculeString('coucou');
+        expect(result).toEqual('COUCOU');
     });
-
     it('Supprimer les espaces avant et après la chaine', function () {
         var result = SupprEspaceString(' Rome ne s\'est pas construite en un jour ');
         expect(result).toEqual('Rome ne s\'est pas construite en un jour');
