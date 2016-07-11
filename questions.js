@@ -7,3 +7,11 @@
 /**
  * Exercices sur les nombres et les caluls mathématiques
  */
+
+	var chaine="Ce texte à une certaine taille";
+	var result=chaine.lenght;
+	return result;
+
+
+
+

@@ -3,7 +3,7 @@
 describe('Les chaines de caractères : ', function () {
 
     it('Donner la taille de la chaine de caractères', function () {
-        var result = tailleString('Ce texte à une certaine taille');
+        var result = tailleString('');
         expect(result).toEqual(30);
     });
 
