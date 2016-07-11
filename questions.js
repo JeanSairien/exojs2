@@ -15,7 +15,7 @@ function tailleString(chaine){
 };
 
 /*ex2*/
-function remplaceCar(chaine){
+function remplaceCar(chaine,before,after){
 	
 	var	result = chaine.replace('e', ' ');
 	return(result); 
@@ -100,11 +100,89 @@ return result =  Math.abs(nbr);
 };
 
 
-function valeurAbsolueArray(tab){
-	var result = tab[];
-	for(){
-
-	return result = Math.abs(tab);
-
+/*function valeurAbsolueArray(tab){
+	var tab = tab.length;
+	var result = [0,4];
+	for(var i=0; i <= tab; i++){
+		var result= Math.abs(tab.i);	
 	}
+
+	return result ;
+
+	
+};*/
+
+function valeurAbsolueArray(tab){
+	return tab.map(valeurAbsolue);
+	 
+	
+
+
 };
+
+/*exo bonus1 1*/
+function InverseString(chaine){
+	return result = chaine.split('').reverse().join('');
+	
+
+};
+
+/*exo bonus1 2*/
+function minusculeString(chaine1){
+	var result = chaine1.toLowerCase();
+	return result ;
+
+
+
+};
+/*exo bonus 1.3*/
+/*function countDistinctCar(str){
+	var result = str.split("").filter(function(str , i ,x){
+	return x.indexOf(str) === i;	
+});
+	return result.length;
+
+
+};*/
+
+/*function countDistinctCar(str){
+	var car ="";
+	var cpt = 0;
+	for(i=0;i<6;i++){
+		if(car!=tab[i]){
+			car = tab[i];
+			cpt++; 
+
+		}
+		return cpt;
+	}
+
+
+};*/
+
+
+function countDistinctCar(texte){
+	var lettre ="";
+	var tab = texte.split("");
+		tab.sort();
+	var count= 0;
+	for(var i=0	;i < texte.length;i++){
+		if( lettre != tab[i]){
+			count++;	
+			lettre = tab[i];	
+		}
+	}
+	return count;
+};
+
+
+
+
+
+/*exo bonus2.1*/ 
+/*function surfaceCercle(5){;
+	var r = 5;
+	var pi = 3.14
+	return math.pi*(r*r);
+}*/
+
